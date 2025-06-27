@@ -1,0 +1,9 @@
+<div>
+  @if (topLoaded()) {
+    <app-top />
+  }
+  @else {
+    <app-placeholder />
+    <button (click)="topLoaded.set(true)">Load Component</button>
+  }
+</div>
